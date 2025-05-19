@@ -199,18 +199,18 @@ function lockFn (){
       <Typography>vbcvb</Typography>
       </Box> */}
       <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignItems: "center",
-          backgroundColor:'#45C4B0',
-          height: "90vh",
-          width: "100vw",
-          mt: 5,
-         
+       sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor:'#45C4B0',
+        height: "90vh",
+        width: "100%",
+        mt: 5,
+      }}
 
-        }}
+  
       >
         <Stack
           width={"100%"}
