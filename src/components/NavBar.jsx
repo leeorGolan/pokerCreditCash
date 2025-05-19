@@ -30,7 +30,7 @@ export default function ButtonAppBar({clearList}) {
         <Toolbar sx={{backgroundColor:'#012030'}}>
          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-           55 Cash (מר גזבר)
+           Poker Credit Cash (מר גזבר)
           </Typography>
           <IconButton
             size="large"
