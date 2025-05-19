@@ -81,7 +81,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
           <Stack sx={{display:"flex",flexDirection:"row" , justifyContent:'space-between' ,width:'100%',height:'80%',backgroundColor:''}}>
           <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
          
-         <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
+         <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
       {/* <Box> */}
           שחקן
            </Typography>
@@ -102,7 +102,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
          
           {/* <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}> */}
           <Box> 
-           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
+           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
              credit
            </Typography>
 
@@ -122,7 +122,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
 
           <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
           <Box> 
-           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
+           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
              cash
            </Typography>
            
@@ -144,10 +144,10 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
             </Typography> */}
 
             
-          <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
+          <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
             credit:{totalMinusNumbers}
             </Typography>
-          <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: green[800]}} >
+          <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: green[800]}} >
            cash:{totalCashNumbers*50}
             </Typography>
             </Box>
