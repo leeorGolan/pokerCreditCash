@@ -207,6 +207,7 @@ function lockFn (){
         backgroundColor:'#45C4B0',
         height: "90vh",
         width: "100%",
+        minWidth: "100%",
         mt: 5,
       }}
 
