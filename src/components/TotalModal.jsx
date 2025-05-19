@@ -72,7 +72,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h5"  sx={{ color:'#012030'}}>
+          <Typography id="modal-modal-title" variant="h5"  sx={{ color:'#012030' }}>
             Total
           </Typography>
 
@@ -81,7 +81,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
           <Stack sx={{display:"flex",flexDirection:"row" , justifyContent:'space-between' ,width:'100%',height:'80%',backgroundColor:''}}>
           <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
          
-         <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}>
+         <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
       {/* <Box> */}
           שחקן
            </Typography>
@@ -102,7 +102,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
          
           {/* <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}> */}
           <Box> 
-           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}>
+           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
              credit
            </Typography>
 
@@ -122,7 +122,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
 
           <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
           <Box> 
-           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}>
+           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:2}}>
              cash
            </Typography>
            
@@ -138,7 +138,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
           </Stack>
 
           {/* <Typography variant='h4'  sx={{ mt: 2 ,color:teal[900]}} > */}
-        <Box sx={{display:'flex',flexDirection:'בםךוצמ',justifyContent:'space-between',alignItems:'center' ,width:'70%',marginRight:8,marginLeft:8,marginBottom:4}}>
+        <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'center' ,width:'70%',marginRight:8,marginLeft:8,marginBottom:4}}>
           {/* <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'green'}} >
             פלוסים:{totalPlusNumbers}
             </Typography> */}

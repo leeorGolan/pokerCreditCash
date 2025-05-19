@@ -261,7 +261,7 @@ function lockFn (){
             <Typography  variant='h5'  color= {todo.num < 0 ? red[800]:'green'} key={index}>{todo.num}</Typography>
           ))}
           cashNumba={todos.map((todo, index) => (
-            <Typography  variant='h5'  color= {todo.num < 0 ? red[800]:'green'} key={index}>{todo.numCash}</Typography>
+            <Typography  variant='h5'  color= {'green'} key={index}>{todo.numCash}</Typography>
           ))}
           allNumbers={allNumbers}
           zeroNumbers={zeroNumbers}
