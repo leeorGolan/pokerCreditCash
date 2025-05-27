@@ -205,10 +205,16 @@ function lockFn (){
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor:'#45C4B0',
-        height: "90vh",
-        width: "100%",
+        height: "100vh",
+        // width: "100vw",
+
+        width: {
+          xs: '100%',   // Mobile
+          sm: '80%',    // Tablet
+          md: '60%',    // Desktop
+        },
         minWidth: "100%",
-        mt: 5,
+        mt: 7,
       }}
 
   
