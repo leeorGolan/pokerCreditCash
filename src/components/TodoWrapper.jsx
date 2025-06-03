@@ -211,7 +211,7 @@ function lockFn (){
         width: {
           xs: '100%',   // Mobile
           sm: '80%',    // Tablet
-          md: '60%',    // Desktop
+          md: '100%',    // Desktop
         },
         minWidth: "100%",
         mt: 7,
