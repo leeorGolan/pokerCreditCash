@@ -138,41 +138,26 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
           </Stack>
 
           {/* <Typography variant='h4'  sx={{ mt: 2 ,color:teal[900]}} > */}
-          <Box sx={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between',alignItems:'flex-start' ,backgroundColor:'',width:'100%',m:1}} >
+          <Box sx={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between',alignItems:'flex-start' ,backgroundColor:'',width:'90%',mr:0}} >
 
-     
-          {/* <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:teal[900]}} >
+        <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'flex-end' ,marginBottom:4 }}>
+          <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:teal[900]}} >
            Credit
+            </Typography>
+          <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'green'}} >
+            פלוסים:{totalPlusNumbers}
+            </Typography>
+    
+            <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
+            מינוסים:{totalMinusNumbers}
+            </Typography>
+{/*             
+          <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
+            credit:{totalMinusNumbers}
             </Typography> */}
-
-
-
-            <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'center' ,border:2 ,borderColor:'black',borderRadius:2,p:1 }}>
-              <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'green'}} >
-                זוכים
-                </Typography>
-
-                <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'green'}} >
-                {totalPlusNumbers}
-                </Typography>
+          
             </Box>
 
-            <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'center' ,border:2 ,borderColor:'black',borderRadius:2,p:1 }}>
-                <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
-                חייבים
-                </Typography>
-
-                <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
-              {totalMinusNumbers}
-                </Typography>
-
-           
-          {/* <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: red[800]}} >
-            credit:{totalMinusNumbers}
-            </Typography>  */}
-          
-        
-{/* 
             <Box sx={{display:'flex',flexDirection:'column',justifyContent:'flex-start',alignItems:'center' }}>
 
             <Typography variant='h4' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: teal[900]}} >
@@ -184,31 +169,18 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
             <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color: green[800]}} >
             total:{totalCashNumbers*50}
             </Typography>
-            </Box> */}
+            </Box>
 
             </Box>
             {/* </Typography> */}
-            <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'center' ,border:2 ,borderColor:'black',borderRadius:2,p:1 }}>
+           
            <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'#012030'}} >
-             ריביי 
+            סך הכל ריביי {totalos}
             </Typography> 
             <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'#012030'}} >
-           {totalos}
-            </Typography> 
-
-            </Box>
-            <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'center' ,border:2 ,borderColor:'black',borderRadius:2,p:1 }}>
-            <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'#012030'}} >
-             מזומן
+            סך הכל מזומן {totalos *50}
             </Typography> 
             
-            <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'#012030'}} >
-           {totalos *50}
-            </Typography> 
-            </Box>
-</Box>
-
-
 
             {totalZero === 0 ?   <img src="/V2.gif" alt="image"  style={{width:240,height:140}}/> :  <img src="/X2.gif" alt="image"  style={{width:240,height:140}}/> }
         </Box>
