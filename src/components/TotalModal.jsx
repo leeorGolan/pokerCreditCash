@@ -72,55 +72,46 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h5"  sx={{ color:'#012030' }}>
+          <Typography id="modal-modal-title" variant="h4"  sx={{ color:'#012030' }}>
             Total
           </Typography>
-
-
 
           <Stack sx={{display:"flex",flexDirection:"row" , justifyContent:'space-between' ,width:'100%',height:'80%',backgroundColor:''}}>
           <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
          
-         <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
-      {/* <Box> */}
+         {/* <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
+    
           שחקן
            </Typography>
            
-           {/* </Box> */}
+        */}
            <Box>
               {player}
             {/* </Typography> */}
             
             </Box>
 
-          
-
-          
          </Stack>
          
          <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
          
           {/* <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900]}}> */}
           <Box  > 
-           <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
+           {/* <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
              credit
-           </Typography>
+           </Typography> */}
 
            </Box>
 
-            <Box> 
-            <Typography id="modal-modal-title" variant="h5" sx={{ color:teal[900]}}>
+            <Box sx={{display:'flex',alignItems:'right',justifyContent:'flex-end' ,backgroundColor:'',width:80}}> 
+            <Typography id="modal-modal-title" variant="h5" sx={{ color:teal[900] ,textAlign:'right'}}>
             {numba}
             </Typography>
            
             </Box>
-
-
-         
-           
           </Stack>
 
-          <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
+          {/* <Stack sx={{display:"flex",flexDirection:"column" , justifyContent:'flex-start' ,alignItems:'center',width:'100%',backgroundColor:''}}>
           <Box> 
            <Typography id="modal-modal-title" variant="h5"  sx={{ color:teal[900],pb:4}}>
              cash
@@ -129,12 +120,12 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
            </Box>
 
           <Box> 
-            {/* <Typography id="modal-modal-title" variant="h4"  sx={{ color:teal[900]}}> */}
+            <Typography id="modal-modal-title" variant="h4"  sx={{ color:teal[900]}}>
               {cashNumba}
-            {/* </Typography> */}
+            </Typography>
             
             </Box>
-          </Stack>
+          </Stack> */}
           </Stack>
 
           {/* <Typography variant='h4'  sx={{ mt: 2 ,color:teal[900]}} > */}
@@ -203,7 +194,7 @@ export default function BasicModal({player,cashNumba,numba,totalos,allNumbers,ze
             </Typography> 
             
             <Typography variant='h6' className='rubik-bubbles-regular'  sx={{ mt: 0 ,color:'#012030'}} >
-           {totalos *50}
+           {Math.abs(totalMinusNumbers*50)}
             </Typography> 
             </Box>
 </Box>

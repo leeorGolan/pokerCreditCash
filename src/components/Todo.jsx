@@ -72,22 +72,22 @@ const [anchorEl, setAnchorEl] = React.useState(null);
            </Box>
 
 
-        <Box sx={{display:'flex' ,flexDirection:'row' ,justifyContent:'space-between',alignItems:'center' ,backgroundColor:'',width:200,pointerEvents:lock  ? "auto" : "none", opacity:lock ? 1 : 0.5   }}>
-           <Box sx={ {backgroundColor:'' ,width:80}} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'space-between'}>
+        <Box sx={{display:'flex' ,flexDirection:'row' ,justifyContent:'center',alignItems:'center' ,backgroundColor:'',width:210,pointerEvents:lock  ? "auto" : "none", opacity:lock ? 1 : 0.5 ,backgroundColor:''  }}>
+           <Box sx={ {backgroundColor:'' ,width:'8em'}} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'flex-end'} >
             <IconButton sx={{color:'#012030'}} variant='contained' onClick= {() => minus(task.id)}><RemoveIcon/></IconButton>
-            <Typography color= {task.num < 0 ? red[800]:'green'}  variant='h5'>{task.num}</Typography>
+            <Typography color= {task.num < 0 ? red[800]:'green'} sx={{textAlign:'right'}}  variant='h5'>{task.num}</Typography>
             <IconButton sx={{color:'#012030'}} variant='contained' onClick= {() => plus(task.id)}><AddIcon/></IconButton>
             </Box> 
 
 
-            <Divider orientation="vertical" variant="middle" flexItem />
+            {/* <Divider orientation="vertical" variant="middle" flexItem /> */}
 
 
-            <Box sx={ {backgroundColor:'' ,width:80}} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'space-between'}>
+            {/* <Box sx={ {backgroundColor:'' ,width:80}} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'space-between'}>
             <IconButton sx={{color:'#012030'}} variant='contained' onClick= {() => minusCash(taskCash.idCash)}><RemoveIcon/></IconButton>
             <Typography color= {taskCash.numCash < 0 ? red[800]:'green'}  variant='h5'>{taskCash.numCash}</Typography>
             <IconButton sx={{color:'#012030'}} variant='contained' onClick= {() => plusCash(taskCash.idCash)}><AddIcon/></IconButton>
-            </Box>
+            </Box> */}
 
             </Box>
 

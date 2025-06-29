@@ -112,7 +112,7 @@ function TodoWrapper() {
       sum += Math.abs(t.num);
     });
     setTotalNum(sum);
-    // console.log(sum);
+     //console.log(sum);
   };
 
 
@@ -234,8 +234,8 @@ function lockFn (){
           <Box sx={{display:'flex' ,flexDirection:'row' ,justifyContent: "space-between",
                 alignItems: "center",width:'100%'}}>
           <Box sx={{ display:'flex' ,flexDirection:'row',ml:12,width:160,backgroundColor:'',justifyContent: "space-between"}}>
-            <Typography variant='h5'>Credit</Typography>
-            <Typography variant='h5'>Cash</Typography>
+            {/* <Typography variant='h5'>Credit</Typography> */}
+            {/* <Typography variant='h5'>Cash</Typography> */}
             </Box>
             <IconButton onClick={lockFn} sx={{mr:2}}>
               {lockState === true ? <LockOpenOutlinedIcon fontSize="large" sx={{backgroundColor:'green'}} /> : <LockOutlinedIcon fontSize="large" sx={{backgroundColor:'red'}}/>}
@@ -258,7 +258,10 @@ function lockFn (){
               plusCash={plusCash}
             />
           ))}
-        </Stack>
+
+
+
+  
 
         <TotalModal
           player={todos.map((todo, index) => (
@@ -267,9 +270,9 @@ function lockFn (){
           numba={todos.map((todo, index) => (
             <Typography  variant='h5'  color= {todo.num < 0 ? red[800]:'green'} key={index}>{todo.num*50}</Typography>
           ))}
-          cashNumba={todos.map((todo, index) => (
-            <Typography  variant='h5'  color= {'green'} key={index}>{todo.numCash}</Typography>
-          ))}
+          // cashNumba={todos.map((todo, index) => (
+          //   <Typography  variant='h5'  color= {'green'} key={index}>{todo.numCash}</Typography>
+          // ))}
           allNumbers={allNumbers}
           zeroNumbers={zeroNumbers}
           totalos={totalNum}
@@ -283,7 +286,7 @@ function lockFn (){
           totalCashNumbers={totalCashNumbers}
 
         />
-
+      </Stack>
       </Box>
     </Box>
   );
